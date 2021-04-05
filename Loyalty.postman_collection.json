@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "238d5b6e-0625-45de-974c-b957acaf22fc",
+		"name": "Loyalty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Subscribers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.57.101:8080/api/subscribers",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Subscriber",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.57.101:8080/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Subscriber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "tom@test2",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Thomas",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Rideout",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.57.101:8080/api/subscribers",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Subscriber",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "billy",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Randal",
+							"type": "text"
+						},
+						{
+							"key": "opt_in",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.57.101:8080/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Subscriber",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.57.101:8080/api/subscribers/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"57",
+						"101"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"subscribers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -19,7 +19,7 @@ class SubscriberResource extends JsonResource
             'email' => $this->email,
             'first_name' => $this->first_name,
             'last_name' => $this->last_name,
-            'op_in' => $this->opt_in,
+            'opt_in' => $this->opt_in,
         ];
         return $data;
     }

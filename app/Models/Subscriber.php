@@ -10,4 +10,7 @@ class Subscriber extends Model
     use HasFactory;
 
     protected $guarded = [];
+    protected $casts = [
+        'opt_in' => 'boolean',
+    ];
 }
